@@ -39,15 +39,8 @@ Dataset ini berisi data dummy terkait pengajuan kredit komputer. Fitur-fitur yan
   ```
 - Precision & Recall menunjukkan performa cukup seimbang, namun recall untuk kelas 1 lebih tinggi.
 
-### 5. Hyperparameter Tuning (GridSearchCV)
-- Parameter yang dituning:
-  - `max_depth`, `min_samples_split`, `min_samples_leaf`, `criterion`
-- Tidak ditemukan peningkatan signifikan setelah tuning (akurasi tetap 80.5%)
-
 ### 6. Visualisasi
 - Visualisasi Decision Tree (struktur pohon)
-- Visualisasi klasifikasi 2D dengan dua fitur awal (projection plot)
-- Feature Importance (opsional)
 
 ---
 
@@ -78,5 +71,4 @@ y_pred = model.predict(X_test)
 
 - Decision Tree berhasil memberikan performa **akurat dan seimbang** meskipun dataset terbatas.
 - **Overfitting minimal** dengan model default.
-- Tuning parameter tidak memberikan peningkatan berarti karena data sudah cukup bersih dan sederhana.
 - Visualisasi decision boundary dan pohon dapat membantu menjelaskan cara kerja model ke pengguna non-teknis.
